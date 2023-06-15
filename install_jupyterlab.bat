@@ -15,6 +15,7 @@ if exist %PYTHON_VENV%\ (
     call %PYTHON_VENV%\Scripts\activate.bat
     pip install jupyterlab
     if exist %DATA_DIR%\ (
+        @echo ---
         @echo The "%DATA_DIR%" folder is exist!
     ) else (
         mkdir %DATA_DIR%
